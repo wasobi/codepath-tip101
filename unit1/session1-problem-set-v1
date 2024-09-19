@@ -3,14 +3,14 @@ Problem Set Version 1
 Team Members: Ashley Tamdjo, Usman Rashid
 '''
 print('\n----------------------------------------\n')
-
+print('Problem 1\n')
 # Problem 1: Hello World!
 def hello_world():
 	print("Hello world!")
 hello_world() # Output: Hello World!
 
 print('\n----------------------------------------\n')
-
+print('Problem 2\n')
 # Problem 2: Today's Mood
 def todays_mood():
 	mood = "🤗🤠🥲😁😝"
@@ -18,14 +18,14 @@ def todays_mood():
 todays_mood() # Output: Today's mood: 🤗🤠🥲😁😝
 
 print('\n----------------------------------------\n')
-
+print('Problem 3\n')
 # Problem 3: Lunch Menu
 def print_menu(menu):
 	print("Lunch today is: " + menu)
 print_menu("🍕") # output: Lunch today is: 🍕
 
 print('\n----------------------------------------\n')
-
+print('Problem 4\n')
 # Problem 4: Sum of Two Integers
 def sum(a, b):
 	return a + b
@@ -33,14 +33,14 @@ sum_of_integers = sum(13,27)
 print(2*sum_of_integers)
 
 print('\n----------------------------------------\n')
-
+print('Problem 5\n')
 # Problem 5: Product of Two Integers
 def product(x,y):
 	return x * y
 print(product(22,7))
 
 print('\n----------------------------------------\n')
-
+print('Problem 6\n')
 # Problem 6: Classify Age
 '''
 Write a function classify_age() that takes an integer age as a parameter and returns "child" if the age is less than 18, and returns "adult" otherwise.
@@ -58,7 +58,7 @@ output = classify_age(50)
 print(output)
 
 print('\n----------------------------------------\n')
-
+print('Problem 7\n')
 # Problem 7: What Time Is It?
 '''
 Let's put what we learned in Problems 1-4 all together! Write a function named what_time_is_it() that takes an integer hour as a parameter.
@@ -82,7 +82,7 @@ time = what_time_is_it(12)
 print(time)
 
 print('\n----------------------------------------\n')
-
+print('Problem 8\n')
 # Problem 8: Blackjack
 '''
 In the game Blackjack, players try to draw a hand of cards that totals as close to 21 as possible. Players "bust" if their cards total more than 21. Players say "Hit me!" if they want the dealer to give them another card.
@@ -110,7 +110,7 @@ blackjack(21)
 blackjack(10)
 
 print('\n----------------------------------------\n')
-
+print('Problem 9\n')
 # Problem 9
 '''
 Write a function get_first() that takes in a list as a parameter and returns the first item in the list. Return None if the list is empty.
@@ -126,7 +126,7 @@ print(get_first([3,1,6,7,5]))
 print(get_first([]))
 
 print('\n----------------------------------------\n')
-
+print('Problem 10\n')
 # Problem 10
 '''
 Write a function get_last() that takes in a list as a parameter and returns the last item in the list. Return None if the list is empty.
@@ -141,7 +141,7 @@ print(get_first([3,1,6,7,5]))
 print(get_first([]))
 
 print('\n----------------------------------------\n')
-
+print('Problem 11\n')
 # Problem 11
 '''
 Write a function counter() that uses the range function to print numbers between 1 and a given stop value (inclusive).
@@ -153,7 +153,7 @@ counter(7)
 counter(10)
 
 print('\n----------------------------------------\n')
-
+print('Problem 12\n')
 # Problem 12: Sum of 1 to 10
 '''
 Write a function sum_ten() that returns the sum of numbers from 1 to 10.
@@ -166,7 +166,7 @@ def sum_ten():
 print(sum_ten())
 
 print('\n----------------------------------------\n')
-
+print('Problem 13\n')
 # Problem 13: Total Sum
 '''
 Write a function sum_positive_range() that returns the sum of numbers from 1 to a given stop value (inclusive).
@@ -180,7 +180,7 @@ sum = sum_positive_range(6)
 print(sum)
 
 print('\n----------------------------------------\n')
-
+print('Problem 14\n')
 # Problem 14: Total Sum in Range
 '''
 Write a function sum_range() that returns the sum of numbers from a given start value to a given stop value (inclusive).
@@ -194,7 +194,7 @@ total = sum_range(3, 9)
 print(total)
 
 print('\n----------------------------------------\n')
-
+print('Problem 15\n')
 # Problem 15
 '''
 Write a function print_negatives() that takes a list of integers lst and prints all negative numbers in the list.
