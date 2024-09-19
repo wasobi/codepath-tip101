@@ -8,16 +8,22 @@ def hello_world():
 	print("Hello world!")
 hello_world() # Output: Hello World!
 
+print('\n----------------------------------------\n')
+
 # Problem 2: Today's Mood
 def todays_mood():
 	mood = "🤗🤠🥲😁😝"
 	print(mood)
 todays_mood() # Output: Today's mood: 🤗🤠🥲😁😝
 
+print('\n----------------------------------------\n')
+
 # Problem 3: Lunch Menu
 def print_menu(menu):
 	print("Lunch today is: " + menu)
 print_menu("🍕") # output: Lunch today is: 🍕
+
+print('\n----------------------------------------\n')
 
 # Problem 4: Sum of Two Integers
 def sum(a, b):
@@ -25,7 +31,79 @@ def sum(a, b):
 sum_of_integers = sum(13,27)
 print(2*sum_of_integers)
 
+print('\n----------------------------------------\n')
+
 # Problem 5: Product of Two Integers
 def product(x,y):
 	return x * y
 print(product(22,7))
+
+print('\n----------------------------------------\n')
+
+# Problem 6: Classify Age
+'''
+Write a function classify_age() that takes an integer age as a parameter and returns "child" if the age is less than 18, and returns "adult" otherwise.
+'''
+def classify_age (age):
+	if age < 18:
+		return "child"
+	else:
+		return "adult"
+output = classify_age(18)
+print(output)
+output = classify_age(7)
+print(output)
+output = classify_age(50)
+print(output)
+
+print('\n----------------------------------------\n')
+
+# Problem 7: What Time Is It?
+'''
+Let's put what we learned in Problems 1-4 all together! Write a function named what_time_is_it() that takes an integer hour as a parameter.
+If hour is 2, the function should return "taco time 🌮".
+If hour is 12, the function should return "peanut butter jelly time 🥪”.
+Otherwise, the function should return "nap time 😴".
+'''
+def what_time_is_it(hour):
+	if hour == 2:
+		return 'taco time 🌮'
+	elif hour == 12:
+		return 'peanut butter jelly time 🥪'
+	else:
+		return 'nap time 😴'
+
+time = what_time_is_it(2)
+print(time)
+time = what_time_is_it(7)
+print(time)
+time = what_time_is_it(12)
+print(time)
+
+print('\n----------------------------------------\n')
+
+# Problem 8: Blackjack
+'''
+In the game Blackjack, players try to draw a hand of cards that totals as close to 21 as possible. Players "bust" if their cards total more than 21. Players say "Hit me!" if they want the dealer to give them another card.
+
+Write a function called blackjack() that takes an integer score as a parameter.
+If score equals 21, print "Blackjack!".
+If score is greater than 21, print "Bust!".
+If score is greater than or equal to 17 and less than 21, print "Nice hand!".
+If score is less than 17, print "Hit me!".
+'''
+def blackjack(score):
+	if score == 21:
+		print("Blackjack!")
+	elif score > 21:
+		print("Bust!")
+	elif score >= 17 and score < 21:
+		print("Nice hand!")
+	else:
+		print("Hit me!")
+	return
+
+blackjack(24)
+blackjack(19)
+blackjack(21)
+blackjack(10)
