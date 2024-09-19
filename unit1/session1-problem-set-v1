@@ -1,0 +1,31 @@
+'''
+Problem Set Version 1
+Team Members: Ashley Tamdjo, Usman Rashid
+'''
+
+# Problem 1: Hello World!
+def hello_world():
+	print("Hello world!")
+hello_world() # Output: Hello World!
+
+# Problem 2: Today's Mood
+def todays_mood():
+	mood = "🤗🤠🥲😁😝"
+	print(mood)
+todays_mood() # Output: Today's mood: 🤗🤠🥲😁😝
+
+# Problem 3: Lunch Menu
+def print_menu(menu):
+	print("Lunch today is: " + menu)
+print_menu("🍕") # output: Lunch today is: 🍕
+
+# Problem 4: Sum of Two Integers
+def sum(a, b):
+	return a + b
+sum_of_integers = sum(13,27)
+print(2*sum_of_integers)
+
+# Problem 5: Product of Two Integers
+def product(x,y):
+	return x * y
+print(product(22,7))
