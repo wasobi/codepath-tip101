@@ -112,13 +112,16 @@ Paper wins against rock.
 If both player1 and player2 have the same value, print "It's a tie!".
 '''
 def rock_paper_scissors(player1, player2):
+    valid_play = {"scissors", "rock", "paper"}
+    if player1 not in valid_play or player2 not in valid_play:
+        print("Invalid play")
+        return    
     if player1 == player2:
         print("It's a tie!")
     elif (player1 == "rock" and player2 == "scissors") or (player1 == "scissors" and player2 == "paper") or (player1 == "paper" and player2 == "rock"):
         print("Player 1 wins!")
     else: 
         print("Player 2 wins!")
-    return
 
 # Tests
 rock_paper_scissors("rock", "rock")
@@ -126,6 +129,7 @@ rock_paper_scissors("scissors", "rock")
 rock_paper_scissors("scissors", "paper")
 rock_paper_scissors("rock", "paper")
 rock_paper_scissors("paper", "rock")
+rock_paper_scissors("paperd", "rockt")
 
 # Problem 7
 print('\n----------------------------------------\n')
